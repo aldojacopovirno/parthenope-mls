@@ -30,9 +30,9 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="flex gap-8 mb-8">
-            <a href="#" className="text-gray-400 hover:text-pmlsRed transition-colors"><Instagram /></a>
-            <a href="#" className="text-gray-400 hover:text-pmlsRed transition-colors"><Linkedin /></a>
-            <a href="#" className="text-gray-400 hover:text-pmlsRed transition-colors"><TikTokIcon /></a>
+            <a href="https://www.instagram.com/parthenope_mls/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pmlsRed transition-colors"><Instagram /></a>
+            <a href="https://www.linkedin.com/company/parthenope-machine-learning-society" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pmlsRed transition-colors"><Linkedin /></a>
+            <a href="https://www.tiktok.com/@parthenope_mls" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pmlsRed transition-colors"><TikTokIcon /></a>
         </div>
 
         <div className="w-full h-px bg-gray-100 mb-6"></div>
