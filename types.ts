@@ -15,6 +15,8 @@ export interface TeamMember {
   role: string;
   bio: string;
   imageUrl: string;
+  linkedinUrl?: string;
+  githubUrl?: string;
 }
 
 export enum View {

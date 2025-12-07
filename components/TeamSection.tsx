@@ -5,31 +5,21 @@ import { Linkedin, Github } from 'lucide-react';
 const TEAM: TeamMember[] = [
   {
     id: 1,
-    name: "Dr. Antonio Esposito",
-    role: "Faculty Advisor",
-    bio: "Professor of Computer Science specializing in Neural Networks.",
-    imageUrl: "https://picsum.photos/400/400?random=10"
+    name: "Aldo Jacopo virno",
+    role: "President",
+    bio: "Brief bio description here.",
+    imageUrl: "/images/member1.jpg",
+    linkedinUrl: "https://linkedin.com/in/username1",
+    githubUrl: "https://github.com/username1"
   },
   {
     id: 2,
-    name: "Sofia Romano",
-    role: "President",
-    bio: "MSc Student in Data Science. Passionate about CV.",
-    imageUrl: "https://picsum.photos/400/400?random=11"
-  },
-  {
-    id: 3,
-    name: "Luca De Santis",
-    role: "Head of Research",
-    bio: "PhD Candidate focusing on Bayesian Methods.",
-    imageUrl: "https://picsum.photos/400/400?random=12"
-  },
-  {
-    id: 4,
-    name: "Chiara Moretti",
-    role: "Outreach Lead",
-    bio: "Undergrad in Statistics. Loves making ML accessible.",
-    imageUrl: "https://picsum.photos/400/400?random=13"
+    name: "Andrea Bucchignani",
+    role: "Chief Scientific Officer",
+    bio: "Brief bio description here.",
+    imageUrl: "/images/member2.jpg",
+    linkedinUrl: "https://linkedin.com/in/username2",
+    githubUrl: "https://github.com"
   }
 ];
 
@@ -65,7 +55,7 @@ const TeamSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
           {TEAM.map((member, index) => (
             <div 
               key={member.id} 
@@ -83,8 +73,28 @@ const TeamSection: React.FC = () => {
               <p className="text-pmlsRed text-sm font-medium uppercase tracking-widest mb-3">{member.role}</p>
               <p className="text-gray-500 text-sm mb-4 px-4">{member.bio}</p>
               <div className="flex justify-center gap-4 text-gray-400">
-                <a href="#" className="hover:text-pmlsBlack transition-colors"><Linkedin size={18} /></a>
-                <a href="#" className="hover:text-pmlsBlack transition-colors"><Github size={18} /></a>
+                {member.linkedinUrl && (
+                  <a
+                    href={member.linkedinUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-pmlsBlack transition-colors"
+                    aria-label={`${member.name} LinkedIn profile`}
+                  >
+                    <Linkedin size={18} />
+                  </a>
+                )}
+                {member.githubUrl && (
+                  <a
+                    href={member.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-pmlsBlack transition-colors"
+                    aria-label={`${member.name} GitHub profile`}
+                  >
+                    <Github size={18} />
+                  </a>
+                )}
               </div>
             </div>
           ))}
