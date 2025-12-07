@@ -7,18 +7,18 @@ const TEAM: TeamMember[] = [
     id: 1,
     name: "Aldo Jacopo virno",
     role: "President",
-    bio: "Brief bio description here.",
-    imageUrl: "public/images/member1.jpg",
-    linkedinUrl: "https://linkedin.com/in/username1",
-    githubUrl: "https://github.com/username1"
+    bio: "Ex Founder & CTO @GreenWall Research.",
+    imageUrl: "/images/member1.jpg",
+    linkedinUrl: "https://linkedin.com/in/aldo-jacopo-virno",
+    githubUrl: "https://github.com/aldojacopovirno"
   },
   {
     id: 2,
     name: "Andrea Bucchignani",
     role: "Chief Scientific Officer",
-    bio: "Brief bio description here.",
-    imageUrl: "public/images/member2.jpg",
-    linkedinUrl: "https://linkedin.com/in/username2",
+    bio: "Former Researcher @Napoli Fintech Lab.",
+    imageUrl: "/images/member2.jpg",
+    linkedinUrl: "https://linkedin.com/in/andrea-bucchignani-a4442b2b2",
     githubUrl: "https://github.com"
   }
 ];
