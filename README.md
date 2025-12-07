@@ -1,8 +1,13 @@
 # Parthenope Machine Learning Society
 
+![React](https://img.shields.io/badge/React-19.2-61DAFB?style=flat&logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=flat&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-6.2-646CFF?style=flat&logo=vite&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat)
+
 Official website repository for the Parthenope Machine Learning Society.
 
-## Repository Structure
+## Structure
 
 ```
 parthenope-mls/
