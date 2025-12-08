@@ -14,160 +14,177 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
           className="flex items-center gap-2 text-gray-600 hover:text-pmlsRed transition-colors mb-8"
         >
           <ArrowLeft size={20} />
-          <span>Torna indietro</span>
+          <span>Back to Home</span>
         </button>
 
         <article className="prose prose-lg max-w-none">
           <h1 className="font-serif text-4xl font-bold mb-4">Privacy Policy</h1>
-          <p className="text-gray-500 text-sm mb-8">Ultimo aggiornamento: {new Date().toLocaleDateString('it-IT', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+          <p className="text-gray-500 text-sm mb-8">Last Updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">1. Introduzione</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">1. Introduction</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Benvenuto nella Privacy Policy della Parthenope Machine Learning Society (PMLS).
-              Ci impegniamo a proteggere la tua privacy e a garantire la sicurezza dei tuoi dati personali.
-              Questa policy descrive come raccogliamo, utilizziamo e proteggiamo le tue informazioni.
+              Welcome to the Privacy Policy of the Parthenope Machine Learning Society (PMLS).
+              We are committed to protecting your privacy and ensuring the security of your personal data.
+              This policy describes how we collect, use, and safeguard your information when you interact with our organization and website.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">2. Informazioni che raccogliamo</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">2. Information We Collect</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Potremmo raccogliere le seguenti tipologie di informazioni:
+              We may collect the following categories of information:
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2">
-              <li><strong>Informazioni di contatto:</strong> nome, cognome, email, numero di telefono quando ci contatti o ti iscrivi ai nostri eventi.</li>
-              <li><strong>Informazioni accademiche:</strong> università, corso di studi, anno accademico (se pertinente per le attività della società).</li>
-              <li><strong>Dati di navigazione:</strong> informazioni tecniche raccolte automaticamente quando visiti il nostro sito web, come indirizzo IP, tipo di browser, e pagine visitate.</li>
+              <li><strong>Contact Information:</strong> First name, last name, email address, and phone number when you contact us or register for our events.</li>
+              <li><strong>Academic Information:</strong> University affiliation, field of study, and academic year (when relevant to society activities).</li>
+              <li><strong>Technical Data:</strong> Information automatically collected when you visit our website, including IP address, browser type, device information, and pages visited.</li>
+              <li><strong>Communication Data:</strong> Records of your correspondence with us, including inquiries and feedback.</li>
             </ul>
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">3. Come utilizziamo le tue informazioni</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">3. How We Use Your Information</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Utilizziamo le tue informazioni per:
+              We process your personal information for the following purposes:
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2">
-              <li>Organizzare e gestire eventi, workshop e attività della società</li>
-              <li>Comunicare con te riguardo eventi, novità e opportunità</li>
-              <li>Rispondere alle tue richieste e fornire supporto</li>
-              <li>Migliorare i nostri servizi e il nostro sito web</li>
-              <li>Inviare newsletter e aggiornamenti (solo con il tuo consenso)</li>
+              <li>To organize and manage events, workshops, and society activities</li>
+              <li>To communicate with you regarding events, updates, and opportunities</li>
+              <li>To respond to your inquiries and provide support</li>
+              <li>To improve our services and enhance our website functionality</li>
+              <li>To send newsletters and updates (only with your explicit consent)</li>
+              <li>To maintain membership records and facilitate community engagement</li>
             </ul>
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">4. Base giuridica del trattamento</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">4. Legal Basis for Processing</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Trattiamo i tuoi dati personali in base alle seguenti basi giuridiche:
+              We process your personal data based on the following legal grounds:
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2">
-              <li><strong>Consenso:</strong> quando ci fornisci il tuo consenso esplicito per trattare i tuoi dati</li>
-              <li><strong>Esecuzione di un contratto:</strong> quando necessario per la tua partecipazione a eventi o attività</li>
-              <li><strong>Legittimo interesse:</strong> per migliorare i nostri servizi e comunicare con i membri della comunità</li>
+              <li><strong>Consent:</strong> When you provide explicit consent for specific processing activities</li>
+              <li><strong>Contract Performance:</strong> When necessary for your participation in events or activities</li>
+              <li><strong>Legitimate Interests:</strong> To improve our services and communicate with our community members</li>
+              <li><strong>Legal Obligations:</strong> When required by applicable laws and regulations</li>
             </ul>
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">5. Condivisione dei dati</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">5. Data Sharing and Disclosure</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Non vendiamo né affittiamo i tuoi dati personali a terze parti. Potremmo condividere le tue informazioni solo nei seguenti casi:
+              We do not sell, rent, or trade your personal information to third parties. We may share your information only in the following circumstances:
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2">
-              <li>Con fornitori di servizi che ci aiutano a gestire il sito web e le nostre attività</li>
-              <li>Con l'Università degli Studi di Napoli "Parthenope" per attività istituzionali</li>
-              <li>Quando richiesto dalla legge o da autorità competenti</li>
-              <li>Con il tuo consenso esplicito</li>
+              <li><strong>Service Providers:</strong> With trusted vendors who assist us in operating our website and conducting our activities, under strict confidentiality agreements</li>
+              <li><strong>University Partners:</strong> With our affiliated university for institutional purposes and collaborative activities</li>
+              <li><strong>Legal Requirements:</strong> When required by law, regulation, or legal process</li>
+              <li><strong>With Your Consent:</strong> In any other circumstances with your explicit permission</li>
             </ul>
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">6. Conservazione dei dati</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">6. Data Retention</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Conserviamo i tuoi dati personali solo per il tempo necessario a soddisfare gli scopi per cui sono stati raccolti,
-              o come richiesto dalla legge. Quando i dati non sono più necessari, vengono eliminati o resi anonimi in modo sicuro.
+              We retain your personal data only for as long as necessary to fulfill the purposes for which it was collected,
+              or as required by applicable laws and regulations. When data is no longer needed, it is securely deleted or anonymized.
+              Specific retention periods depend on the nature of the data and our legal obligations.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">7. I tuoi diritti</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">7. Your Rights</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              In conformità con il GDPR, hai i seguenti diritti:
+              Under the General Data Protection Regulation (GDPR) and applicable data protection laws, you have the following rights:
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2">
-              <li><strong>Diritto di accesso:</strong> puoi richiedere una copia dei tuoi dati personali</li>
-              <li><strong>Diritto di rettifica:</strong> puoi chiedere la correzione di dati inesatti o incompleti</li>
-              <li><strong>Diritto di cancellazione:</strong> puoi richiedere l'eliminazione dei tuoi dati in determinate circostanze</li>
-              <li><strong>Diritto di limitazione:</strong> puoi chiedere di limitare il trattamento dei tuoi dati</li>
-              <li><strong>Diritto di portabilità:</strong> puoi ricevere i tuoi dati in un formato strutturato e leggibile</li>
-              <li><strong>Diritto di opposizione:</strong> puoi opporti al trattamento dei tuoi dati per determinate finalità</li>
-              <li><strong>Diritto di revocare il consenso:</strong> puoi ritirare il tuo consenso in qualsiasi momento</li>
+              <li><strong>Right of Access:</strong> Request a copy of the personal data we hold about you</li>
+              <li><strong>Right to Rectification:</strong> Request correction of inaccurate or incomplete data</li>
+              <li><strong>Right to Erasure:</strong> Request deletion of your personal data under certain circumstances</li>
+              <li><strong>Right to Restriction:</strong> Request limitation of processing activities</li>
+              <li><strong>Right to Data Portability:</strong> Receive your data in a structured, machine-readable format</li>
+              <li><strong>Right to Object:</strong> Object to processing of your data for specific purposes</li>
+              <li><strong>Right to Withdraw Consent:</strong> Withdraw your consent at any time where processing is based on consent</li>
             </ul>
             <p className="text-gray-700 leading-relaxed mt-4">
-              Per esercitare questi diritti, contattaci all'indirizzo email fornito nella sezione Contatti.
+              To exercise any of these rights, please contact us using the information provided in the Contact section below.
+              We will respond to your request within the timeframe required by applicable law.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">8. Cookie e tecnologie simili</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">8. Cookies and Similar Technologies</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Il nostro sito web utilizza cookie e tecnologie simili per migliorare l'esperienza utente.
-              I cookie sono piccoli file di testo memorizzati sul tuo dispositivo. Puoi gestire le preferenze
-              sui cookie attraverso le impostazioni del tuo browser.
+              Our website may use cookies and similar tracking technologies to enhance user experience and analyze website performance.
+              Cookies are small text files stored on your device. You can manage cookie preferences through your browser settings.
+              Please note that disabling certain cookies may affect website functionality.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">9. Sicurezza dei dati</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">9. Data Security</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Implementiamo misure di sicurezza tecniche e organizzative appropriate per proteggere i tuoi dati
-              personali da accesso non autorizzato, alterazione, divulgazione o distruzione. Tuttavia, nessun
-              metodo di trasmissione su Internet o di archiviazione elettronica è completamente sicuro.
+              We implement appropriate technical and organizational security measures to protect your personal data against
+              unauthorized access, alteration, disclosure, or destruction. These measures include encryption, access controls,
+              and regular security assessments. However, no method of transmission over the Internet or electronic storage
+              is completely secure, and we cannot guarantee absolute security.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">10. Link a siti esterni</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">10. Third-Party Links</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Il nostro sito web può contenere link a siti esterni. Non siamo responsabili per le pratiche
-              di privacy di questi siti. Ti invitiamo a leggere le loro privacy policy quando visiti questi siti.
+              Our website may contain links to external websites operated by third parties. We are not responsible for the
+              privacy practices or content of these external sites. We encourage you to review the privacy policies of any
+              third-party websites you visit.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">11. Modifiche a questa Privacy Policy</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">11. International Data Transfers</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Ci riserviamo il diritto di aggiornare questa Privacy Policy periodicamente. Le modifiche
-              saranno pubblicate su questa pagina con la data di "Ultimo aggiornamento" rivista.
-              Ti invitiamo a controllare regolarmente questa pagina per rimanere informato su come
-              proteggiamo i tuoi dati.
+              Your personal information may be transferred to and processed in countries outside the European Economic Area (EEA).
+              When such transfers occur, we ensure appropriate safeguards are in place to protect your data in accordance with
+              applicable data protection laws.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">12. Contatti</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">12. Children's Privacy</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Per qualsiasi domanda o richiesta riguardante questa Privacy Policy o il trattamento dei tuoi dati personali,
-              puoi contattarci attraverso:
+              Our services are not directed to individuals under the age of 16. We do not knowingly collect personal information
+              from children. If you become aware that a child has provided us with personal information, please contact us, and
+              we will take steps to delete such information.
+            </p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="font-serif text-2xl font-bold mb-4">13. Changes to This Privacy Policy</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              We reserve the right to update this Privacy Policy periodically to reflect changes in our practices or applicable
+              laws. Material changes will be posted on this page with an updated "Last Updated" date. We encourage you to review
+              this policy regularly to stay informed about how we protect your information.
+            </p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="font-serif text-2xl font-bold mb-4">14. Contact Information</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              If you have any questions, concerns, or requests regarding this Privacy Policy or our data processing practices,
+              please contact us at:
             </p>
             <ul className="list-none text-gray-700 space-y-2">
               <li><strong>Email:</strong> <a href="mailto:parthenope.mls@gmail.com" className="text-pmlsRed hover:underline">parthenope.mls@gmail.com</a></li>
-              <li><strong>Indirizzo:</strong> Università degli Studi di Napoli "Parthenope", Via Acton 38, 80133 Napoli, Italia</li>
             </ul>
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">13. Autorità di controllo</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">15. Supervisory Authority</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Hai il diritto di presentare un reclamo al Garante per la Protezione dei Dati Personali se
-              ritieni che il trattamento dei tuoi dati personali violi il GDPR.
-            </p>
-            <p className="text-gray-700 leading-relaxed">
-              <strong>Garante per la Protezione dei Dati Personali</strong><br />
-              Piazza Venezia, 11 - 00187 Roma<br />
-              Telefono: (+39) 06.696771<br />
-              Email: <a href="mailto:garante@gpdp.it" className="text-pmlsRed hover:underline">garante@gpdp.it</a><br />
-              Sito web: <a href="https://www.garanteprivacy.it" target="_blank" rel="noopener noreferrer" className="text-pmlsRed hover:underline">www.garanteprivacy.it</a>
+              You have the right to lodge a complaint with your local data protection supervisory authority if you believe
+              that our processing of your personal data violates applicable data protection laws. For matters within Italy,
+              you may contact the Italian Data Protection Authority (Garante per la Protezione dei Dati Personali).
             </p>
           </section>
         </article>
