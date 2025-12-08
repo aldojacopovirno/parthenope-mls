@@ -173,7 +173,7 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
               please contact us at:
             </p>
             <ul className="list-none text-gray-700 space-y-2">
-              <li><strong>Email:</strong> <a href="mailto:parthenope.ml.society@gmail.com" className="text-pmlsRed hover:underline">parthenope.mls@gmail.com</a></li>
+              <li><strong>Email:</strong> <a href="mailto:parthenope.ml.society@gmail.com" className="text-pmlsRed hover:underline">parthenope.ml.society@gmail.com</a></li>
             </ul>
           </section>
 
