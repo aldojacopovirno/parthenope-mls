@@ -23,8 +23,7 @@ const TermsOfService: React.FC<TermsOfServiceProps> = ({ onBack }) => {
 
           <section className="mb-8">
             <p className="text-gray-700 leading-relaxed mb-4">
-              Welcome to the Parthenope Machine Learning Society (PMLS). By accessing our website and participating in our activities,
-              you agree to comply with and be bound by these Terms of Service. Please read these terms carefully before using our services.
+              By accessing our website and participating in our activities, you agree to comply with and be bound by these Terms of Service. Please read these terms carefully before using our services.
             </p>
           </section>
 
