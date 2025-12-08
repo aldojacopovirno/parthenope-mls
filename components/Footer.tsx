@@ -21,9 +21,10 @@ const TikTokIcon = ({ size = 24, className = "" }) => (
 
 interface FooterProps {
   onPrivacyClick?: () => void;
+  onTermsClick?: () => void;
 }
 
-const Footer: React.FC<FooterProps> = ({ onPrivacyClick }) => {
+const Footer: React.FC<FooterProps> = ({ onPrivacyClick, onTermsClick }) => {
   return (
     <footer className="bg-white border-t border-gray-200 pt-12 pb-6">
       <div className="max-w-7xl mx-auto px-6 flex flex-col items-center">
@@ -45,7 +46,7 @@ const Footer: React.FC<FooterProps> = ({ onPrivacyClick }) => {
             <p>&copy; 2025 Parthenope Machine Learning Society. All rights reserved.</p>
             <div className="flex gap-4 mt-2 md:mt-0">
                 <button onClick={onPrivacyClick} className="hover:text-pmlsBlack cursor-pointer">Privacy Policy</button>
-                <a href="#" className="hover:text-pmlsBlack">Terms of Service</a>
+                <button onClick={onTermsClick} className="hover:text-pmlsBlack cursor-pointer">Terms of Service</button>
             </div>
         </div>
       </div>
