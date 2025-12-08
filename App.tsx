@@ -8,15 +8,19 @@ import TeamSection from './components/TeamSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import BlogPostDetail from './components/BlogPostDetail';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsOfService from './components/TermsOfService';
 
 const App: React.FC = () => {
   const [currentView, setView] = useState<View>(View.HOME);
   const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
+  const [showPrivacyPolicy, setShowPrivacyPolicy] = useState<boolean>(false);
+  const [showTermsOfService, setShowTermsOfService] = useState<boolean>(false);
 
   // Handle scroll spy to update header active state
   useEffect(() => {
-    // Disable scroll spy if we are viewing a specific blog post
-    if (selectedPost) {
+    // Disable scroll spy if we are viewing a specific blog post, privacy policy, or terms of service
+    if (selectedPost || showPrivacyPolicy || showTermsOfService) {
       setView(View.BLOG); // Keep blog active or maybe none
       return;
     }
@@ -52,12 +56,14 @@ const App: React.FC = () => {
     });
 
     return () => observer.disconnect();
-  }, [selectedPost]);
+  }, [selectedPost, showPrivacyPolicy, showTermsOfService]);
 
   const handleNavigate = (view: View, id: string) => {
-    // If we are in a post, go back to main view first
-    if (selectedPost) {
+    // If we are in a post, privacy policy, or terms of service, go back to main view first
+    if (selectedPost || showPrivacyPolicy || showTermsOfService) {
       setSelectedPost(null);
+      setShowPrivacyPolicy(false);
+      setShowTermsOfService(false);
       // Wait for render cycle to restore sections, then scroll
       setTimeout(() => {
         setView(view);
@@ -71,14 +77,34 @@ const App: React.FC = () => {
 
   const handlePostClick = (post: BlogPost) => {
     setSelectedPost(post);
+    setShowPrivacyPolicy(false);
+    setShowTermsOfService(false);
+  };
+
+  const handlePrivacyClick = () => {
+    setShowPrivacyPolicy(true);
+    setSelectedPost(null);
+    setShowTermsOfService(false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleTermsClick = () => {
+    setShowTermsOfService(true);
+    setSelectedPost(null);
+    setShowPrivacyPolicy(false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
     <div className="min-h-screen bg-white">
       <Header currentView={currentView} onNavigate={handleNavigate} />
-      
+
       <main>
-        {selectedPost ? (
+        {showTermsOfService ? (
+          <TermsOfService onBack={() => setShowTermsOfService(false)} />
+        ) : showPrivacyPolicy ? (
+          <PrivacyPolicy onBack={() => setShowPrivacyPolicy(false)} />
+        ) : selectedPost ? (
           <BlogPostDetail post={selectedPost} onBack={() => setSelectedPost(null)} />
         ) : (
           <>
@@ -90,8 +116,8 @@ const App: React.FC = () => {
           </>
         )}
       </main>
-      
-      <Footer />
+
+      <Footer onPrivacyClick={handlePrivacyClick} onTermsClick={handleTermsClick} />
     </div>
   );
 };
