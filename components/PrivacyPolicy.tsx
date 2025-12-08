@@ -22,7 +22,6 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
           <p className="text-gray-500 text-sm mb-8">Last Updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">1. Introduction</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               We are committed to protecting your privacy and ensuring the security of your personal data.
               This policy describes how we collect, use, and safeguard your information when you interact with our organization and website.
@@ -30,7 +29,7 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">2. Information We Collect</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">1. Information We Collect</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               We may collect the following categories of information:
             </p>
@@ -43,7 +42,7 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">3. How We Use Your Information</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">2. How We Use Your Information</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               We process your personal information for the following purposes:
             </p>
@@ -58,7 +57,7 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">4. Legal Basis for Processing</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">3. Legal Basis for Processing</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               We process your personal data based on the following legal grounds:
             </p>
@@ -71,7 +70,7 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">5. Data Sharing and Disclosure</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">4. Data Sharing and Disclosure</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               We do not sell, rent, or trade your personal information to third parties. We may share your information only in the following circumstances:
             </p>
@@ -84,7 +83,7 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">6. Data Retention</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">5. Data Retention</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               We retain your personal data only for as long as necessary to fulfill the purposes for which it was collected,
               or as required by applicable laws and regulations. When data is no longer needed, it is securely deleted or anonymized.
@@ -93,7 +92,7 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">7. Your Rights</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">6. Your Rights</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Under the General Data Protection Regulation (GDPR) and applicable data protection laws, you have the following rights:
             </p>
@@ -113,7 +112,7 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">8. Cookies and Similar Technologies</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">7. Cookies and Similar Technologies</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Our website may use cookies and similar tracking technologies to enhance user experience and analyze website performance.
               Cookies are small text files stored on your device. You can manage cookie preferences through your browser settings.
@@ -122,7 +121,7 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">9. Data Security</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">8. Data Security</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               We implement appropriate technical and organizational security measures to protect your personal data against
               unauthorized access, alteration, disclosure, or destruction. These measures include encryption, access controls,
@@ -132,7 +131,7 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">10. Third-Party Links</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">9. Third-Party Links</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Our website may contain links to external websites operated by third parties. We are not responsible for the
               privacy practices or content of these external sites. We encourage you to review the privacy policies of any
@@ -141,7 +140,7 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">11. International Data Transfers</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">10. International Data Transfers</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Your personal information may be transferred to and processed in countries outside the European Economic Area (EEA).
               When such transfers occur, we ensure appropriate safeguards are in place to protect your data in accordance with
@@ -150,7 +149,7 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">12. Children's Privacy</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">11. Children's Privacy</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Our services are not directed to individuals under the age of 16. We do not knowingly collect personal information
               from children. If you become aware that a child has provided us with personal information, please contact us, and
@@ -159,7 +158,7 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">13. Changes to This Privacy Policy</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">12. Changes to This Privacy Policy</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               We reserve the right to update this Privacy Policy periodically to reflect changes in our practices or applicable
               laws. Material changes will be posted on this page with an updated "Last Updated" date. We encourage you to review
@@ -168,7 +167,7 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">14. Contact Information</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">13. Contact Information</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               If you have any questions, concerns, or requests regarding this Privacy Policy or our data processing practices,
               please contact us at:
@@ -179,7 +178,7 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
           </section>
 
           <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold mb-4">15. Supervisory Authority</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">14. Supervisory Authority</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               You have the right to lodge a complaint with your local data protection supervisory authority if you believe
               that our processing of your personal data violates applicable data protection laws. For matters within Italy,
