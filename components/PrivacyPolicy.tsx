@@ -24,7 +24,6 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
           <section className="mb-8">
             <h2 className="font-serif text-2xl font-bold mb-4">1. Introduction</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Welcome to the Privacy Policy of the Parthenope Machine Learning Society (PMLS).
               We are committed to protecting your privacy and ensuring the security of your personal data.
               This policy describes how we collect, use, and safeguard your information when you interact with our organization and website.
             </p>
