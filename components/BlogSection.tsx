@@ -5,11 +5,11 @@ import { llmMechanicsPost } from '../blog-posts/llm-mechanics';
 import { attentionMechanismPost } from '../blog-posts/attention-mechanism';
 import { reinforcementLearningPost } from '../blog-posts/reinforcement-learning';
 
-// Array of all blog posts
+// Array of all blog posts - sorted chronologically (newest to oldest)
 const BLOG_POSTS: BlogPost[] = [
-  llmMechanicsPost,
   attentionMechanismPost,
   reinforcementLearningPost,
+  llmMechanicsPost,
 ];
 
 interface BlogSectionProps {
