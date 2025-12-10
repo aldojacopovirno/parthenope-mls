@@ -5,7 +5,7 @@ import { Linkedin, Github } from 'lucide-react';
 const TEAM: TeamMember[] = [
   {
     id: 1,
-    name: "Aldo Jacopo virno",
+    name: "Aldo Jacopo Virno",
     role: "President",
     bio: "Ex Founder & CTO @GreenWall Research.",
     imageUrl: `${import.meta.env.BASE_URL}images/member1.jpg`,
