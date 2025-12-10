@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { BlogPost } from '../types';
 import { ArrowLeft, Calendar, User, Tag } from 'lucide-react';
+import '../styles/blog-post.css';
 
 interface BlogPostDetailProps {
   post: BlogPost;
@@ -43,70 +44,72 @@ const BlogPostDetail: React.FC<BlogPostDetailProps> = ({ post, onBack }) => {
   }, [post]);
 
   return (
-    <article className="min-h-screen bg-white pt-24 pb-20 animate-fade-in">
+    <article className="min-h-screen bg-gradient-to-b from-white to-gray-50 pt-24 pb-20 animate-fade-in">
       {/* Header Image */}
-      <div className="w-full h-64 md:h-96 relative mb-8 overflow-hidden">
-        <div className="absolute inset-0 bg-black/30 z-10"></div>
-        <img 
-          src={post.imageUrl} 
-          alt={post.title} 
+      <div className="w-full h-72 md:h-[28rem] relative mb-12 overflow-hidden shadow-xl">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-transparent z-10"></div>
+        <img
+          src={post.imageUrl}
+          alt={post.title}
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 z-20 flex items-center justify-center">
-            {/* Optional: Put title here for a hero effect, but currently sticking to content flow */}
-        </div>
       </div>
 
-      <div className="max-w-3xl mx-auto px-6">
-        <button 
+      <div className="max-w-4xl mx-auto px-6 md:px-8">
+        <button
           onClick={onBack}
-          className="flex items-center text-gray-500 hover:text-pmlsRed transition-colors mb-8 group"
+          className="flex items-center text-gray-600 hover:text-pmlsRed transition-all duration-300 mb-10 group font-medium"
         >
-          <ArrowLeft size={20} className="mr-2 group-hover:-translate-x-1 transition-transform" />
+          <ArrowLeft size={22} className="mr-2 group-hover:-translate-x-2 transition-transform duration-300" />
           Back to Blog
         </button>
 
-        <div className="mb-8 border-b border-gray-100 pb-8">
-            <div className="flex flex-wrap gap-2 mb-4">
+        {/* Article Header */}
+        <header className="mb-12 pb-10 border-b-2 border-gray-200">
+            <div className="flex flex-wrap gap-2 mb-6">
                 {post.tags.map(tag => (
-                    <span key={tag} className="px-3 py-1 bg-red-50 text-pmlsRed text-xs font-bold uppercase tracking-wider rounded-full">
+                    <span key={tag} className="px-4 py-1.5 bg-gradient-to-r from-red-50 to-red-100 text-pmlsRed text-xs font-bold uppercase tracking-wider rounded-full shadow-sm">
                         {tag}
                     </span>
                 ))}
             </div>
-            
-            <h1 className="font-serif text-4xl md:text-5xl text-pmlsBlack mb-6 leading-tight">
+
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-pmlsBlack mb-8 leading-tight font-bold">
                 {post.title}
             </h1>
 
-            <div className="flex items-center gap-6 text-sm text-gray-500">
+            <div className="flex items-center gap-8 text-base text-gray-600">
                 <div className="flex items-center gap-2">
-                    <User size={16} />
-                    <span>{post.author}</span>
+                    <User size={18} className="text-pmlsRed" />
+                    <span className="font-medium">{post.author}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                    <Calendar size={16} />
+                    <Calendar size={18} className="text-pmlsRed" />
                     <span>{post.date}</span>
                 </div>
             </div>
-        </div>
+        </header>
 
-        <div 
-            className="prose prose-lg prose-red max-w-none font-serif text-gray-800 leading-relaxed"
+        {/* Article Content */}
+        <div
+            className="blog-post-content mb-16"
             dangerouslySetInnerHTML={{ __html: post.content || `<p>${post.excerpt}</p>` }}
         >
             {/* Content rendered from HTML */}
         </div>
-        
-        <div className="mt-16 pt-8 border-t border-gray-100">
-             <h3 className="text-xl font-bold mb-4">Share this article</h3>
+
+        {/* Article Footer */}
+        <footer className="mt-20 pt-10 border-t-2 border-gray-200">
+             <h3 className="text-2xl font-bold mb-6 text-pmlsBlack">Share this article</h3>
              <div className="flex gap-4">
-                 {/* Social share placeholders */}
-                 <button className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-pmlsRed hover:text-white transition-colors">
-                     <Tag size={16} />
+                 <button
+                    className="w-12 h-12 rounded-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center hover:from-pmlsRed hover:to-red-700 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110"
+                    aria-label="Share"
+                 >
+                     <Tag size={18} />
                  </button>
              </div>
-        </div>
+        </footer>
       </div>
     </article>
   );
