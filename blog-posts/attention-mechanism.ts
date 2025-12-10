@@ -347,6 +347,6 @@ export const attentionMechanismPost: BlogPost = {
   `,
   author: "A. J. Virno",
   date: "December 10, 2025",
-  imageUrl: "https://picsum.photos/800/600?random=2",
+  imageUrl: "images/blog/attention-mechanism.jpg",
   tags: ["Attention", "Transformers", "NLP", "Deep Learning"]
 };

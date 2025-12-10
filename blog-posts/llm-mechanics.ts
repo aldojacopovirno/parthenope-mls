@@ -240,6 +240,6 @@ export const llmMechanicsPost: BlogPost = {
   `,
   author: "A. Bucchignani, A. J. Virno",
   date: "December 8, 2025",
-  imageUrl: "https://picsum.photos/800/600?random=1",
+  imageUrl: "images/blog/llm-mechanics.jpg",
   tags: ["LLM", "Transformers", "Deep Learning", "NLP"]
 };

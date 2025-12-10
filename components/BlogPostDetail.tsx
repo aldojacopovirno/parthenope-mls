@@ -49,7 +49,7 @@ const BlogPostDetail: React.FC<BlogPostDetailProps> = ({ post, onBack }) => {
       <div className="w-full h-72 md:h-[28rem] relative mb-12 overflow-hidden shadow-xl">
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-transparent z-10"></div>
         <img
-          src={post.imageUrl}
+          src={`${import.meta.env.BASE_URL}${post.imageUrl}`}
           alt={post.title}
           className="w-full h-full object-cover"
         />

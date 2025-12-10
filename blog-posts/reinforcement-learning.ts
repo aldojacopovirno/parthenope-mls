@@ -373,6 +373,6 @@ export const reinforcementLearningPost: BlogPost = {
   `,
   author: "A. Bucchignani",
   date: "December 9, 2025",
-  imageUrl: "https://picsum.photos/800/600?random=3",
+  imageUrl: "images/blog/reinforcement-learning.jpg",
   tags: ["RLHF", "Reinforcement Learning", "AI Alignment", "LLM"]
 };

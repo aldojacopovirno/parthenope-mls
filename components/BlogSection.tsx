@@ -60,7 +60,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ onPostClick }) => {
             >
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src={post.imageUrl}
+                  src={`${import.meta.env.BASE_URL}${post.imageUrl}`}
                   alt={post.title}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
