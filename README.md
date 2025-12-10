@@ -12,18 +12,30 @@ Official website repository for the Parthenope Machine Learning Society.
 ```
 parthenope-mls/
 ├── components/
-│   ├── About.tsx           # About section component
-│   ├── BlogSection.tsx     # Blog posts grid
-│   ├── BlogPostDetail.tsx  # Individual blog post view
-│   ├── ContactSection.tsx  # Contact form and info
-│   ├── Footer.tsx          # Site footer
-│   ├── Header.tsx          # Navigation header
-│   ├── Hero.tsx            # Landing hero section
-│   └── TeamSection.tsx     # Team members display
-├── types.ts                # TypeScript type definitions
-├── App.tsx                 # Main application component
-├── index.tsx               # Entry point
-└── vite.config.ts          # Vite configuration
+│   ├── About.tsx            # About section component
+│   ├── BlogSection.tsx      # Blog posts grid
+│   ├── BlogPostDetail.tsx   # Individual blog post view
+│   ├── ContactSection.tsx   # Contact form and info
+│   ├── Footer.tsx           # Site footer
+│   ├── Header.tsx           # Navigation header
+│   ├── Hero.tsx             # Landing hero section
+│   ├── PrivacyPolicy.tsx    # Privacy policy page
+│   ├── TeamSection.tsx      # Team members display
+│   └── TermsOfService.tsx   # Terms of service page
+├── blog-posts/
+│   ├── attention-mechanism.ts      # Attention mechanism blog post
+│   ├── llm-mechanics.ts            # LLM mechanics blog post
+│   └── reinforcement-learning.ts   # Reinforcement learning blog post
+├── public/
+│   └── images/              # Static image assets
+├── styles/
+│   └── blog-post.css        # Blog post styling
+├── App.tsx                  # Main application component
+├── index.tsx                # Entry point
+├── types.ts                 # TypeScript type definitions
+├── metadata.json            # Site metadata
+├── vite.config.ts           # Vite configuration
+└── tsconfig.json            # TypeScript configuration
 ```
 
 ## License
