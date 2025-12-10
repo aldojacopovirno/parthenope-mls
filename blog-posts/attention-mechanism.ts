@@ -346,7 +346,7 @@ export const attentionMechanismPost: BlogPost = {
     <p><em>— Parthenope Machine Learning Society</em></p>
   `,
   author: "A. J. Virno",
-  date: "2025",
+  date: "December 10, 2025",
   imageUrl: "https://picsum.photos/800/600?random=2",
   tags: ["Attention", "Transformers", "NLP", "Deep Learning"]
 };

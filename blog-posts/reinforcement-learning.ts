@@ -372,7 +372,7 @@ export const reinforcementLearningPost: BlogPost = {
     <p><em>— Parthenope Machine Learning Society</em></p>
   `,
   author: "A. Bucchignani",
-  date: "2025",
+  date: "December 9, 2025",
   imageUrl: "https://picsum.photos/800/600?random=3",
   tags: ["RLHF", "Reinforcement Learning", "AI Alignment", "LLM"]
 };

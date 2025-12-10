@@ -239,7 +239,7 @@ export const llmMechanicsPost: BlogPost = {
     <p><em>— Parthenope Machine Learning Society</em></p>
   `,
   author: "A. Bucchignani, A. J. Virno",
-  date: "2025",
+  date: "December 8, 2025",
   imageUrl: "https://picsum.photos/800/600?random=1",
   tags: ["LLM", "Transformers", "Deep Learning", "NLP"]
 };
